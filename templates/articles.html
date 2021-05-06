@@ -1,0 +1,17 @@
+{% extends 'base.html'%}
+
+{% block body %}
+
+<div class="container ">
+<h2>Мої дописи</h2>
+    <form method="post">
+        <input type="text" class="form-control" name="title" id="title" placeholder="Заголовок"><br>
+        <textarea class="form-control" name="intro" id="intro" placeholder="Короткий зміст"></textarea><br>
+        <textarea class="form-control" name="main_text" rows=4 id="main_text" placeholder="Основний текст"></textarea><br>
+
+        <input type="submit" value="Відіслати дані" class="btn btn-outline-success">
+
+    </form>
+
+</div>
+{% endblock %}

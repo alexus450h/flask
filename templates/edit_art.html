@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block body %}
+
+<div class="container ">
+<h2>Редагування статті</h2>
+
+    <form method="post">
+
+        <input type="text" class="form-control" name="title" id="title" placeholder="Заголовок" value="{{sub.title}}"><br>
+        <textarea class="form-control" name="intro" id="intro" placeholder="Короткий зміст">{{sub.intro}}</textarea><br>
+        <textarea class="form-control" name="main_text" rows=4 id="main_text" placeholder="Основний текст">{{sub.main_text}}</textarea><br>
+
+        <input type="submit" value="Зберегти статтю" class="btn btn-outline-success">
+
+    </form>
+
+</div>
+{% endblock %}

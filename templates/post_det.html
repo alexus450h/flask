@@ -1,0 +1,16 @@
+{% extends 'base.html'%}
+{% block body %}
+
+<div class="container mt-5">
+
+    <div class="alert alert-warning text-danger">
+         <h2>{{article.title}}</h2>
+        <p >{{ article.main_text }}<br></p>
+
+        <a href="/post_det/{{article.id}}/del" class="btn btn-danger">Видалити</a>
+        <a href="/edit_art/{{article.id}}/update" class="btn btn-warning">Редагувати</a>
+
+    </div>
+
+</div>
+{% endblock %}
