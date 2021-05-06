@@ -14,7 +14,7 @@ class Blog(db.Model):
     data_=db.Column(db.DateTime,default=datetime.utcnow())
     def __repr__(self):
         return'Blog %r'%self.id
-
+print("a")
 @myApp.route('/index')
 @myApp.route('/')
 def index():
