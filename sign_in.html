@@ -1,0 +1,19 @@
+{% extends 'base.html'%}
+
+{% block body %}
+
+<div class="container  border col-sm-4" >
+    <div class="alert alert-success mt-2 ">
+        <strong>{{flag}}</strong>
+    </div>
+    <h3>Register form</h3>
+
+    <form method="post">
+        <input type="text" name="nik" id="nik" class="form-warning mb-3" placeholder="Input nikname"><br>
+        <input type="text" name="psw" id="psw" class="form-warning" placeholder="Input passcode"><br >
+        <input type="submit" name="but" value="Send" class="btn btn-outline-danger mt-3">
+    </form>
+
+</div>
+
+{% endblock %}
